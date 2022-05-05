@@ -29,11 +29,21 @@ class SignInPage extends StatelessWidget {
             ),
           ),
           SizedBox(height: 8.0),
-          ElevatedButton(onPressed: () { print('button pressed');},
-              child: Text('Sign in with Google'),
+          ElevatedButton(
+            onPressed: () {},
+            child: Text('Sign in with Google'),
+            style: ElevatedButton.styleFrom(
+              primary: Colors.white,
+              onPrimary: Colors.grey,
+            ),
           ),
         ],
       ),
     );
   }
+}
+
+void _signInWithGoogle() {
+  // TODO: Auth with Google
+  print('google button pressed');
 }
