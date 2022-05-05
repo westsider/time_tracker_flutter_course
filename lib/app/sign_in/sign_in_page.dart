@@ -9,13 +9,13 @@ class SignInPage extends StatelessWidget {
         centerTitle: true,
         elevation: 4.0,
       ),
-      body: buildContent(),
+      body: _buildContent(),
     );
   }
 
-  Widget buildContent() {
-    return Container(
-      color: Colors.yellow,
+  Widget _buildContent() {
+    return Padding(
+      padding: EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -25,12 +25,14 @@ class SignInPage extends StatelessWidget {
               height: 100,
             ),
           ),
+          SizedBox(height: 8.0),
           Container(
             color: Colors.red,
             child: SizedBox(
               height: 100,
             ),
           ),
+          SizedBox(height: 8.0),
           Container(
             color: Colors.purple,
             child: SizedBox(
