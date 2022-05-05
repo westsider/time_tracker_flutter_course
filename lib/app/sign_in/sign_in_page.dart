@@ -10,6 +10,7 @@ class SignInPage extends StatelessWidget {
         elevation: 4.0,
       ),
       body: _buildContent(),
+      backgroundColor: Colors.grey[200],
     );
   }
 
@@ -31,10 +32,20 @@ class SignInPage extends StatelessWidget {
           SizedBox(height: 8.0),
           ElevatedButton(
             onPressed: () {},
-            child: Text('Sign in with Google'),
+            child: Text(
+              'Sign in with Google',
+              style: TextStyle(
+                fontSize: 15.0,
+              ),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.white,
-              onPrimary: Colors.grey,
+              onPrimary: Colors.black87,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(4.0),
+                )
+              )
             ),
           ),
         ],
