@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:time_tracker_flutter_course/Common_Widgets/CustomElevatedButton.dart';
 
 class SignInPage extends StatelessWidget {
   @override
@@ -39,14 +40,25 @@ class SignInPage extends StatelessWidget {
               ),
             ),
             style: ElevatedButton.styleFrom(
-              primary: Colors.white,
-              onPrimary: Colors.black87,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(
+                primary: Colors.white,
+                onPrimary: Colors.black87,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(
                   Radius.circular(4.0),
-                )
-              )
+                ))),
+          ),
+          SizedBox(height: 8.0),
+          CustomRaisedButton(
+            child: Text(
+              'Sign in with Facebook',
+              style: TextStyle(
+                color: Colors.black87,
+                fontSize: 15.0,
+              ),
             ),
+            color: Colors.white,
+            borderRadius: 4.0,
+            onPressed: () {},
           ),
         ],
       ),
